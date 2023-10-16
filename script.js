@@ -61,3 +61,9 @@ function setLocalStorageValue(productName, productQuantity) {
 }
 // const nums = { n: 12 };
 // console.log(nums["n"]);
+
+// clear items
+document.getElementById("clear-btn").addEventListener("click", function () {
+  localStorage.clear();
+  itemsContainer.classList.remove("display");
+});
